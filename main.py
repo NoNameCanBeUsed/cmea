@@ -164,16 +164,12 @@ if __name__ == "__main__":
     u_box = [
         branch_swap(ubox) for row in U for ubox in row
     ]
-    t_lat = generate_abslat(t_box)
-    u_lat = generate_abslat(u_box)
     #print("T lat:")
     #print_table(t_lat,"Tlat")
     #plt.imshow(t_lat,cmap="Reds")
     #plt.colorbar()  # 添加颜色条
     #plt.title("TBox LAT")
     #print("U lat:")
-    print_table(u_lat,"Ulat")
-    plt.imshow(u_lat, cmap="Greys")
-    plt.colorbar()  # 添加颜色条
+    #plt.show
     plt.title("uBox LAT")
     plt.show()
